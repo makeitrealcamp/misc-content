@@ -1,4 +1,4 @@
-¿Sabes cuál es la diferencia entre los **elementos de bloque** y **elementos en línea** en HTML?
+Aprovechando que estás acá ¿Sabes cuál es la diferencia entre los **elementos de bloque** y **elementos en línea** en HTML? Si no lo sabes, esta lectura es para ti.
 
 ## Elementos de bloque
 
