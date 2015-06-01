@@ -2,17 +2,23 @@ Aprovechando que estás acá ¿Sabes cuál es la diferencia entre los **elemento
 
 ## Elementos de bloque
 
-Los **elementos de bloque** (block elements) se caracterizan porque los navegadores los muestran en una nueva línea, y por defecto ocupan todo el ancho de la pantalla. Los más usados son párrafos (`p`), encabezados (`h1`, `h2`, `h3`, etc.), secciones (`div`), tablas (`table`) y formularios (`form`).
-
-Por ejemplo, a continuación tenemos un encabezado (`h3`) y un párrafo (`p`). Fíjate que aunque en el código los estamos definiendo en la misma línea, **el navegador los muestra en líneas diferentes y ocupan el ancho de la pantalla.**
+Empecemos con un ejemplo. El siguiente código HTML tiene un encabezado `h3` y un párrafo `p` **sobre la misma línea**. ¿Cómo crees que se verá el resultado?
 
 <div data-height="146" data-theme-id="0" data-slug-hash="PqWLog" data-default-tab="html" data-user="germanescobar" class='codepen'><pre><code>&lt;h3&gt;Hola&lt;/h3&gt;&lt;p&gt;Mundo&lt;/p&gt;</code></pre>
 <p>See the Pen <a href='http://codepen.io/germanescobar/pen/PqWLog/'>PqWLog</a> by German Escobar (<a href='http://codepen.io/germanescobar'>@germanescobar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+Los **elementos de bloque** (block elements) se caracterizan porque los navegadores los muestran en una nueva línea, y por defecto ocupan todo el ancho de la pantalla. Los elementos de bloque más usados son:
+
+* Párrafos (`p`)
+* Encabezados (`h1`, `h2`, `h3`, etc.)
+* Secciones o divisiones (`div`)
+* Tablas (`table`)
+* Formularios (`form`)
+
 ## Elementos en línea
 
-Los **elementos en línea** (inline elements) como links (`a`), negrita (`strong`), imágenes (`img`), campos de entrada (`input`), etc., se caracterizan porque **los navegadores los muestran en la misma línea** y su ancho está determinado por su contenido:
+Veamos otro ejemplo. El siguiente código HTML tiene varios elementos en **diferentes líneas**. ¿Cómo crees que se verá el resultado?
 
 <div data-height="200" data-theme-id="0" data-slug-hash="OVWqPe" data-default-tab="html" data-user="germanescobar" class='codepen'><pre><code>&lt;strong&gt;Estos&lt;/strong&gt; 
 son 
@@ -23,9 +29,17 @@ en
 <p>See the Pen <a href='http://codepen.io/germanescobar/pen/OVWqPe/'>OVWqPe</a> by German Escobar (<a href='http://codepen.io/germanescobar'>@germanescobar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
+Los **elementos en línea** (inline elements) se caracterizan porque **los navegadores los muestran en la misma línea**, y su ancho y largo están determinado por su contenido. Algunos ejemplos de elementos en línea son:
+
+* Links (`a`)
+* Negrita (`strong`)
+* Imágenes (`img`)
+* Énfasis (`em`)
+* Span (`span`)
+
 ## El atributo display
 
-Es posible cambiar el comportamiento de los elementos de bloque y en línea usando el atributo `display` de CSS. Por ejemplo, la siguiente regla CSS cambia el comportamiento de todos los párrafos para que se comporten como elementos inline:
+Es posible cambiar el comportamiento de los elementos de bloque y en línea usando el atributo `display` de CSS. Por ejemplo, la siguiente regla CSS cambia el comportamiento de todos los párrafos (un elemento de bloque) para que se comporten como elementos inline:
 
 <div data-height="214" data-theme-id="0" data-slug-hash="RPKdbq" data-default-tab="css" data-user="germanescobar" class='codepen'><pre><code>p {
   display: inline;
@@ -45,6 +59,11 @@ De la misma forma podemos cambiar, por ejemplo, el comportamiento de todos los t
 <p>See the Pen <a href='http://codepen.io/germanescobar/pen/NqdVvo/'>NqdVvo</a> by German Escobar (<a href='http://codepen.io/germanescobar'>@germanescobar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
-El atributo `display` puede tomar otro valores, pero los más comunes son: `inline`, `block` e `inline-block`. `inline-block` se comporta como `inline` pero respetando el ancho y el alto que le asignemos (recuerda que el ancho y el alto de `inline` está determinado por el contenido) como se muestra en el siguiente ejemplo:
+El atributo `display` puede tomar otro valores, pero los más comunes son: `inline`, `block` e `inline-block`. `inline-block` se comporta como `inline` pero respetando el ancho y el alto que le asignemos (recuerda que el ancho y el alto de `inline` está determinado por el contenido).
+
+<div data-height="237" data-theme-id="0" data-slug-hash="NqdQZB" data-default-tab="html" data-user="germanescobar" class='codepen'><pre><code>&lt;p&gt;En esta línea, &lt;span&gt;el alto y ancho&lt;/span&gt; del span no se respeta.&lt;/p&gt;
+&lt;p&gt;En esta otra, &lt;span class=&quot;respete&quot;&gt;el alto y el ancho&lt;/span&gt; si se respeta.&lt;/p&gt;</code></pre>
+<p>See the Pen <a href='http://codepen.io/germanescobar/pen/NqdQZB/'>NqdQZB</a> by German Escobar (<a href='http://codepen.io/germanescobar'>@germanescobar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Si deseas conocer más del atributo `display`, te recomendamos que revises <a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">este recurso</a>.
